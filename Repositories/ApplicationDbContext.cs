@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using BusinessObjects;
+using BusinessObjects.Authentication;
+using BusinessObjects.Shop;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -14,6 +18,13 @@ public class ApplicationDbContext: IdentityDbContext
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
     }
+    
+    public virtual DbSet<Account> Accounts { get; set; }
+    public virtual DbSet<Role> Roles { get; set; }
+    public virtual DbSet<AccountRole> AccountRoles { get; set; }
+    public virtual DbSet<Product> Products { get; set; }    
+    public virtual DbSet<ProductCategory> ProductCategories { get; set; }
+    public virtual DbSet<ProductImage> ProductImages { get; set; }
 
     private String GetConnectionString()
     {
@@ -21,11 +32,27 @@ public class ApplicationDbContext: IdentityDbContext
             .SetBasePath(Directory.GetCurrentDirectory())
             .AddJsonFile("appsettings.json", true, true)
             .Build();
-        return configuration.GetConnectionString(DEFAULT_CONNECTION_STRING) ?? String.Empty;
+        return configuration.GetConnectionString("DefaultConnectionString") ?? String.Empty;
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer();
+        optionsBuilder.UseSqlServer(GetConnectionString());
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.Ignore<IdentityRole>();
+        modelBuilder.Ignore<IdentityUser>();
+        modelBuilder.Ignore<IdentityUserClaim<string>>();
+        modelBuilder.Ignore<IdentityUserLogin<string>>();
+        modelBuilder.Ignore<IdentityUserToken<string>>();
+        modelBuilder.Ignore<IdentityUserRole<string>>();
+        modelBuilder.Ignore<IdentityRoleClaim<string>>();
+        modelBuilder.Entity<AccountRole>(builder =>
+        {
+            builder.HasKey(x => new { x.UserId, x.RoleId });
+        });
     }
 }

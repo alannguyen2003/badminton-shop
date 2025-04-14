@@ -1,4 +1,5 @@
 using Infrastructure;
+using Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
