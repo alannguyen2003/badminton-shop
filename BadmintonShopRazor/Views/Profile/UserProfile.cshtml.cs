@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace BadmintonShopRazor.Views.Shop;
+namespace BadmintonShopRazor.Views.Profile;
 
-public class Shop : PageModel
+public class UserProfile : PageModel
 {
     public void OnGet()
     {
