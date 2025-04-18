@@ -10,15 +10,15 @@ public class Product
     public String ProductDescription { get; set; }
     public String? ThumbnailUrl { get; set; }
     public String? ThumbnailBase64 { get; set; }
-    [ForeignKey(nameof(ProductCategoryId))]
     public Guid? ProductCategoryId { get; set; }
-    [ForeignKey(nameof(CreatedById))]
+    public DateTime CreatedAt { get; set; }
     public virtual Guid? CreatedById { get; set; }
-    [ForeignKey(nameof(ModifiedById))]
-    public virtual Guid? ModifiedById { get; set; }
+    public DateTime UpdatedAt { get; set; }
+    public virtual Guid? UpdatedById { get; set; }
     
     public virtual ProductCategory  ProductCategory { get; set; }
-    public virtual ICollection<ProductImage> ProductImages { get; set; }
     public virtual Account? CreatedBy { get; set; }
-    public virtual Account? ModifiedBy { get; set; }
+    public virtual Account? UpdatedBy { get; set; }
+    public virtual ICollection<ProductImage> ProductImages { get; set; }
+
 }

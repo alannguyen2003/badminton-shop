@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadmintonShopAPI", "BadmintonShopAPI\BadmintonShopAPI.csproj", "{B4B4ACD0-317E-4673-B69E-AA8DD6F63F43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadmintonShop.API", "BadmintonShop.API\BadmintonShop.API.csproj", "{B4B4ACD0-317E-4673-B69E-AA8DD6F63F43}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{4445C63E-57CD-4667-92DE-32A43DE08A62}"
 EndProject
@@ -10,15 +10,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{8B251809-3D65-48DC-A7A4-D5143C186A59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{59D1D03D-C300-4065-ACB2-CB38B8D447ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadmintonShop.Repositories", "BadmintonShop.Repositories\BadmintonShop.Repositories.csproj", "{59D1D03D-C300-4065-ACB2-CB38B8D447ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{34399D29-7753-4341-840F-A0465B5F8EBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadmintonShop.Services", "BadmintonShop.Services\BadmintonShop.Services.csproj", "{34399D29-7753-4341-840F-A0465B5F8EBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadmintonShopRazor", "BadmintonShopRazor\BadmintonShopRazor.csproj", "{FE1A31E0-C80A-4DB4-82D6-2AFF6324C037}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadmintonShop.Razor", "BadmintonShop.Razor\BadmintonShop.Razor.csproj", "{FE1A31E0-C80A-4DB4-82D6-2AFF6324C037}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{1EC9042A-E365-44BB-A1E7-F77ED145839F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{A65BA0EF-697F-499C-94C4-6CE1F4D796A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadmintonShop.Infrastructure", "BadmintonShop.Infrastructure\BadmintonShop.Infrastructure.csproj", "{A65BA0EF-697F-499C-94C4-6CE1F4D796A0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A61D2BB3-6CD6-4DB9-A0CC-BD4303C007E8}"
 	ProjectSection(SolutionItems) = preProject
