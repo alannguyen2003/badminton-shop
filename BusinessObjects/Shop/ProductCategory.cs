@@ -11,19 +11,14 @@ public class ProductCategory
     public String CategoryDescription { get; set; }
     public bool IsDelete { get; set; }
     public DateTime CreatedAt { get; set; }
-    [ForeignKey(nameof(CreatedById))]
     public Guid? CreatedById { get; set; }
-    public DateTime ModifiedAt { get; set; }
-    [ForeignKey(nameof(ModifiedById))]
-    public Guid? ModifiedById { get; set; }
+    public DateTime UpdatedAt { get; set; }
+    public Guid? UpdatedById { get; set; }
+    public Guid? ParentCategoryId { get; set; }
     
-    [ForeignKey(nameof(OfCategoryId))]
-    public Guid? OfCategoryId { get; set; }
-        
-        
-    public virtual Account CreatedBy { get; set; }
-    public virtual Account ModifiedBy { get; set; }
-    public virtual ICollection<ProductCategory> Categories { get; set; }
-    public virtual ProductCategory OfCategory { get; set; }
-
+    public virtual Account? CreatedBy { get; set; }
+    public virtual Account? UpdatedBy { get; set; }
+    public virtual ProductCategory? ParentCategory { get; set; }
+    public virtual ICollection<ProductCategory> ProductCategories { get; set; }
+    public virtual ICollection<Product> Products { get; set; }
 }
