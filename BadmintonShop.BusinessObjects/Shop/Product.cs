@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using BusinessObjects.Authentication;
+using BadmintonShop.BusinessObjects.Authentication;
 
-namespace BusinessObjects.Shop;
+namespace BadmintonShop.BusinessObjects.Shop;
 
 public class Product
 {

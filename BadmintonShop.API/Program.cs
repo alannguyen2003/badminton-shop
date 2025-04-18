@@ -1,5 +1,5 @@
+using BadmintonShop.BusinessObjects.Authentication;
 using BadmintonShop.Repositories;
-using BusinessObjects.Authentication;
 using Infrastructure;
 using Infrastructure.Extensions;
 using Microsoft.AspNetCore.Identity;

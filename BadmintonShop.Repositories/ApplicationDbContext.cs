@@ -1,6 +1,6 @@
-﻿using BusinessObjects;
-using BusinessObjects.Authentication;
-using BusinessObjects.Shop;
+﻿using BadmintonShop.BusinessObjects;
+using BadmintonShop.BusinessObjects.Authentication;
+using BadmintonShop.BusinessObjects.Shop;
 using Infrastructure.Context.Configuration.ModelBuilder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;

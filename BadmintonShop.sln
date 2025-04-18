@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{809C00
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{937BA1FD-C167-4D12-B4BB-496040740A5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{8B251809-3D65-48DC-A7A4-D5143C186A59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadmintonShop.BusinessObjects", "BadmintonShop.BusinessObjects\BadmintonShop.BusinessObjects.csproj", "{8B251809-3D65-48DC-A7A4-D5143C186A59}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadmintonShop.Repositories", "BadmintonShop.Repositories\BadmintonShop.Repositories.csproj", "{59D1D03D-C300-4065-ACB2-CB38B8D447ED}"
 EndProject

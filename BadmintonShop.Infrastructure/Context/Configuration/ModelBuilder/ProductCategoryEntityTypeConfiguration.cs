@@ -1,4 +1,4 @@
-﻿using BusinessObjects.Shop;
+﻿using BadmintonShop.BusinessObjects.Shop;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

@@ -1,4 +1,4 @@
-﻿namespace BusinessObjects.Address;
+﻿namespace BadmintonShop.BusinessObjects.Address;
 
 public class Province
 {
