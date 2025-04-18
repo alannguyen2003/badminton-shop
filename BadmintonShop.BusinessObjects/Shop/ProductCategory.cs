@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.CompilerServices;
-using BusinessObjects.Authentication;
+using BadmintonShop.BusinessObjects.Authentication;
 
-namespace BusinessObjects.Shop;
+namespace BadmintonShop.BusinessObjects.Shop;
 
 public class ProductCategory
 {

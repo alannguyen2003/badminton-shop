@@ -1,7 +1,7 @@
-﻿using BusinessObjects.Shop;
+﻿using BadmintonShop.BusinessObjects.Shop;
 using Microsoft.AspNetCore.Identity;
 
-namespace BusinessObjects.Authentication;
+namespace BadmintonShop.BusinessObjects.Authentication;
 
 public class Account : IdentityUser<Guid>
 {
