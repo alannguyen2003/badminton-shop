@@ -16,11 +16,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Context\Configuration\" />
+      <ProjectReference Include="..\BadmintonShop.BusinessObjects\BadmintonShop.BusinessObjects.csproj" />
+      <ProjectReference Include="..\BadmintonShop.Enumarable\BadmintonShop.Enumarable.csproj" />
+      <ProjectReference Include="..\BadmintonShop.Repositories\BadmintonShop.Repositories.csproj" />
+      <ProjectReference Include="..\BadmintonShop.Services\BadmintonShop.Services.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BadmintonShop.BusinessObjects\BadmintonShop.BusinessObjects.csproj" />
+      <Folder Include="Context\Configuration\ModelBuilder\" />
     </ItemGroup>
 
 </Project>

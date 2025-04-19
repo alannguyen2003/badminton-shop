@@ -10,4 +10,8 @@
       <ProjectReference Include="..\BadmintonShop.Repositories\BadmintonShop.Repositories.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.15" />
+    </ItemGroup>
+
 </Project>
