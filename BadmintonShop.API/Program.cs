@@ -1,21 +1,23 @@
-using BadmintonShop.BusinessObjects.Authentication;
+using BadmintonShop.BusinessObjects.Entity.Authentication;
 using BadmintonShop.Repositories;
+using BadmintonShop.Services.Services.Implements;
 using Infrastructure;
 using Infrastructure.Extensions;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddRepositories();
+/*
 builder.Services.AddServices();
+*/
 builder.Services.AddDbContext<ApplicationDbContext>();
-
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-builder.Services.AddIdentityApiEndpoints<Account>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentity<Account, Role>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+builder.Services.AddSingleton<IEmailSender<Account>, EmailService>();
 builder.Services.AddSwaggerConfiguration();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

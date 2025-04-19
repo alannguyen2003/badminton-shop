@@ -21,4 +21,13 @@
       </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Entity\" />
+      <Folder Include="ModelBuilder\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BadmintonShop.Enumarable\BadmintonShop.Enumarable.csproj" />
+    </ItemGroup>
+
 </Project>
